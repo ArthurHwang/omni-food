@@ -24,7 +24,10 @@ html {
     text-rendering: optimizeLegibility;
 }
 
-.clearfix {zoom:1}
+.clearfix {
+    zoom: 1
+}
+
 .clearfix:after {
     content: '';
     clear: both;
@@ -32,6 +35,8 @@ html {
     height: 0;
     visibility: hidden;
 }
+
+
 
 
 /*-----------------------------------------------------*/
@@ -54,6 +59,8 @@ section {
 .box {
     padding: 1%;
 }
+
+
 
 
 
@@ -101,6 +108,8 @@ h2:after {
 
 
 
+
+
 /* -------- PARAGRAPHS-------- */
 
 .long-copy {
@@ -117,6 +126,8 @@ h2:after {
 
 
 
+
+
 /* -------- ICONS-------- */
 
 .icon-big {
@@ -129,10 +140,13 @@ h2:after {
 
 
 
+
+
 /* -------- BUTTONS -------- */
 
 .btn:link,
-.btn:visited {
+.btn:visited,
+input[type="submit"] {
     display: inline-block;
     padding: 10px 30px;
     font-weight: 300;
@@ -143,7 +157,8 @@ h2:after {
 }
 
 .btn-full:link,
-.btn-full:visited {
+.btn-full:visited,
+input[type="submit"] {
     background-color: #e67e22;
     border: 1px solid #e67e22;
     color: #fff;
@@ -156,12 +171,15 @@ h2:after {
 }
 
 .btn:hover,
-.btn:active {
+.btn:active,
+input[type="submit"]:hover,
+input[type="submit"]:active {
     background-color: #cf6d17;
 }
 
 .btn-full:hover,
-.btn-full:active {
+.btn-full:active,
+input[type="submit"] {
     border: 1px solid #cf6d17;
 }
 
@@ -170,6 +188,8 @@ h2:after {
     border: 1px solid #e67e22;
     color: #fff;
 }
+
+
 
 
 
@@ -233,6 +253,8 @@ header {
 
 
 
+
+
 /*-----------------------------------------------------*/
 
 
@@ -244,6 +266,8 @@ header {
 .section-features .long-copy {
     margin-bottom: 30px;
 }
+
+
 
 
 
@@ -292,6 +316,8 @@ header {
 }
 
 
+
+
 /*-----------------------------------------------------*/
 
 
@@ -300,15 +326,14 @@ header {
 
 /*-----------------------------------------------------*/
 
-
 .section-steps {
     background-color: #f4f4f4;
 }
+
 .steps-box:first-child {
     text-align: right;
     padding-right: 3%;
     margin-top: 30px;
-
 }
 
 .steps-box:last-child {
@@ -325,7 +350,7 @@ header {
 }
 
 .works-step:last-of-type {
-    margin-bottom:  80px;
+    margin-bottom: 80px;
 }
 
 .works-step div {
@@ -345,7 +370,7 @@ header {
 .btn-app img {
     height: 50px;
     width: auto;
-    margin-right: 10px;    
+    margin-right: 10px;
 }
 
 
@@ -355,10 +380,7 @@ header {
 }
 
 
-.section-cities {
-   
-    
-}
+.section-cities {}
 
 .box img {
     width: 100%;
@@ -370,11 +392,12 @@ header {
 .city-feature {
     margin: 5px;
 }
+
 .section-cities-info {
     list-style: none;
 }
 
-.section-cities div h3{
+.section-cities div h3 {
     text-align: left;
 }
 
@@ -415,7 +438,6 @@ blockquote {
     font-style: italic;
     line-height: 145%;
     position: relative;
-
 }
 
 cite {
@@ -432,12 +454,98 @@ blockquote:before {
     top: -5px;
     left: -5px;
     margin-bottom: 30px;
-    
 }
 
 cite img {
     height: 45px;
     border-radius: 50%;
     margin-right: 10px;
-    vertical-align: middle;    
+    vertical-align: middle;
 }
+
+.section-plans {
+    background-color: #f4f4f4;
+}
+
+.plan-box {
+    background-color: #fff;
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 5%;
+    box-shadow: 0 2px 2px #efefef;
+}
+
+.plan-box div {
+    padding: 15px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.plan-price {
+    font-size: 300%;
+    font-weight: 300;
+    margin-bottom: 10px;
+    color: #e67e22;
+}
+
+.plan-box div:last-child {
+    text-align: center;
+    border: none;
+}
+
+.plan-box div:first-child {
+    background-color: #e0e0e0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.plan-price-meal {
+    font-size: 80%;
+}
+
+.plan-price span {
+    font-size: 30%;
+    font-weight: 300;
+}
+
+.plan-box ul {
+    list-style: none;
+}
+
+.plan-box ul li {
+    padding: 5px 0;
+}
+
+
+
+/*-----------------------------------------------------*/
+
+
+/* Contact form */
+
+
+/*-----------------------------------------------------*/
+
+.contact-form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type=checkbox] {
+    margin: 10px 5px 10px 0;
+}
+
+*:focus {outline: none;}
